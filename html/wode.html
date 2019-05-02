@@ -137,12 +137,12 @@
 						<b>优惠券</b>
 						<span class="mui-icon mui-icon-arrowright"></span>
 					</li>
-					<li>
+					<li id="dianzi">
 						<i class="iconfont icon-dianzifapiao"></i>
 						<b>电子发票</b>
 						<span class="mui-icon mui-icon-arrowright"></span>
 					</li>
-					<li>
+					<li id="lianweb">
 						<i class="iconfont icon-didian"></i>
 						<b>联网车站</b>
 						<span class="mui-icon mui-icon-arrowright"></span>
@@ -164,5 +164,19 @@
 				<b>客服电话: 400-610-5610(可退保险)</b>
 			</div>
 		</div>
+		<script>
+			document.getElementById('dianzi').addEventListener('tap',function(){
+			mui.openWindow({
+			url: 'wode/fapiao.html', 
+			id:'fapiao'
+			})
+			})
+			document.getElementById('lianweb').addEventListener('tap',function(){
+			mui.openWindow({
+			url: 'wode/lianweb.html', 
+			id:'lianweb'
+			})
+			})
+		</script>
 	</body>
 </html>
