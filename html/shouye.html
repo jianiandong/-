@@ -9,6 +9,7 @@
 		<link href="../css/iconfont.css" rel="stylesheet" />
 		<link href="../css/shouye.css" rel="stylesheet" rel="stylesheet" type="text/css"/>
 		<script src="../js/mui.js"></script>
+		<script src="../js/Jump.js" type="text/javascript"></script>
 		<script src="../js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript">
 			mui.init()
@@ -70,12 +71,12 @@
 				</div>
 				<div class="inp">
 					<ul>
-						<li>
+						<li class="a">
 							<i class="iconfont icon-yuanquan"></i>
 							<b>贵阳</b>
 							<span class="iconfont icon-jiaohuan"></span>
 						</li>
-						<li>
+						<li class="a">
 							<i class="iconfont icon-yuanquan"></i>
 							<b>请设置目的地</b>
 						</li>
@@ -134,9 +135,10 @@
 				</div>
 			</div>
 		</div>
-		
-		
 		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			})
 			(function($){
 			        $(".mui-scroll-wrapper").scroll({
 			              bounce: true,//滚动条是否有弹力默认是true
@@ -163,6 +165,18 @@
 				document.getElementsByClassName("inp1")[0].style.display="block";
 				document.getElementsByClassName("inp")[0].style.display="none";
 			}
+			document.getElementsByClassName('a')[0].addEventListener('tap',function(){
+      		mui.openWindow({
+			url: 'shouye/chufa.html', 
+			id:'chufa'
+			})
+			})
+			document.getElementsByClassName('a')[1].addEventListener('tap',function(){
+			mui.openWindow({
+			url: 'shouye/chufa.html', 
+			id:'chufa'
+			})
+			})
 			
 		</script>
 	</body>

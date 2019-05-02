@@ -1,0 +1,17 @@
+{
+	"index.html": {
+		"resources": [
+			"html/shouye.html"
+		],
+		"refer": [
+			"html/wode.html",
+			"html/dingdan.html",
+			"html/shouye.html"
+		]
+	},
+	"html/shouye.html": {
+		"refer": [
+			"html/shouye/chufa.html"
+		]
+	}
+}
