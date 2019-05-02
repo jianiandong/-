@@ -68,7 +68,7 @@
 				<h1 class="mui-title">我的订单</h1>
 			</header>
 			<ul>
-				<li>
+				<li class="qiCar">
 					<i class="iconfont icon-che"></i>
 					<b>汽车票订单</b>
 					<span class="mui-icon mui-icon-arrowright"></span>
@@ -115,5 +115,13 @@
 				</li>
 			</ul>
 		</div>
+		<script>
+			document.getElementsByClassName('qiCar')[0].addEventListener('tap',function(){
+			mui.openWindow({
+			url: 'dingdan/qiCar.html', 
+			id:'qiCar'
+			})
+			})
+		</script>
 	</body>
 </html>

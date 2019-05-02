@@ -9,8 +9,271 @@
 		<script type="text/javascript">
 			mui.init()
 		</script>
+		<style>
+			ul{
+				padding: 0;
+				list-style: none;
+			}
+			.allDd{
+				margin-top: 45px;
+			}
+			.allDd>ul{
+				display: flex;
+				background: white;
+				justify-content: space-around;
+			}
+			.allDd>ul>li{
+				width: 33%;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				font-size: 15px;
+				color: black;
+			}
+			.teshu{
+				border-bottom: 2px solid blue;
+			}
+			.guding{
+				margin-bottom: 10px;
+			}
+			.guding>p{
+				display: flex;
+				justify-content: space-between;
+				height: 40px;
+				border-bottom: 1px solid #CCCCCC;
+				background: white;
+			}
+			.guding>p>b{
+				display: block;
+				width: 60px;
+				height: 20px;
+				line-height: 20px;
+				border: 1px solid blue;
+				text-align: center;
+				margin-left: 20px;
+				margin-top: 10px;
+			}
+			.guding>p>span{
+				padding-right: 20px;
+				padding-top: 10px;
+			}
+			.guding1{
+				margin-bottom: 10px;
+			}
+			.guding1>p{
+				display: flex;
+				justify-content: space-between;
+				height: 40px;
+				border-bottom: 1px solid #CCCCCC;
+				background: white;
+			}
+			.guding1>p>b{
+				display: block;
+				width: 60px;
+				height: 20px;
+				line-height: 20px;
+				border: 1px solid blue;
+				text-align: center;
+				margin-left: 20px;
+				margin-top: 10px;
+			}
+			.guding1>p>span{
+				padding-right: 20px;
+				padding-top: 10px;
+			}
+			.guding2>p{
+				display: flex;
+				justify-content: space-between;
+				height: 40px;
+				border-bottom: 1px solid #CCCCCC;
+				background: white;
+			}
+			.guding2>p>b{
+				display: block;
+				width: 60px;
+				height: 20px;
+				line-height: 20px;
+				border: 1px solid blue;
+				text-align: center;
+				margin-left: 20px;
+				margin-top: 10px;
+			}
+			.guding2>p>span{
+				padding-right: 20px;
+				padding-top: 10px;
+			}
+			.mui-pull-top-pocket{
+				overflow: visible !important;
+			}
+			.mui-pull-caption{
+				top: -30px;
+			}
+			.mui-pull-loading{
+				margin-bottom: 60px;
+			}
+			.fly{
+				display: flex;
+				justify-content: space-between;
+				background: white;
+				margin-top: -10px;
+			}
+			.fly>div{
+				flex: 1;
+				line-height: 30px;
+				height: 70px;
+				border-bottom: 1px solid #CCCCCC;
+			}
+			.fly>div:nth-child(1){
+				padding-left: 20px;
+			}
+			.fly>div:nth-child(2){
+				text-align: right;
+				padding-right: 20px;
+			}
+			.liji{
+				height: 40px;
+				background: white;
+				border-bottom: 1px solid #CCCCCC;
+				overflow: hidden;
+			}
+			.liji>b{
+				width: 120px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				display: block;
+				border: 1px solid orangered;
+				margin-top: 5px;
+				float: right;
+				margin-right: 20px;
+			}
+		</style>
 	</head>
 	<body>
-		
+		<div id="qiCar">
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+				<h1 class="mui-title">汽车票订单</h1>
+			</header>
+			<div class="allDd">
+				<ul>
+					<li class="teshu" id="a1">全部订单</li>
+					<li id="a2">待支付</li>
+					<li id="a3">未出行</li>
+				</ul>
+			</div>
+			<div id="refreshContainer" class="mui-content mui-scroll-wrapper" style="margin-top: 80px;padding-top: 0;">
+			    <div class="mui-scroll">
+					<div class="guding">
+						<p>
+							<b>固定班</b>
+							<span>待支付</span>
+						</p>
+						<div class="fly">
+							<div>
+								<b>龙洞堡机场<i class="mui-icon mui-icon-arrowthinright"></i>遵义</b><br />
+								<span>发车时间:05月04日 10:00</span>
+							</div>
+							<div>
+								<b>¥89</b><br />
+								<span>共1张票</span>
+							</div>
+						</div>
+						<div class="liji"> 
+							<b>立即支付</b>
+						</div>
+					</div>
+					<div class="guding1">
+						<p>
+							<b>固定班</b>
+							<span>待支付</span>
+						</p>
+						<div class="fly">
+							<div>
+								<b>金阳客运站<i class="mui-icon mui-icon-arrowthinright"></i>遵义</b><br />
+								<span>发车时间:05月04日 10:00</span>
+							</div>
+							<div>
+								<b>¥75</b><br />
+								<span>共1张票</span>
+							</div>
+						</div>
+						<div class="liji"> 
+							<b>立即支付</b>
+						</div>
+					</div>
+					<div class="guding2">
+						<p>
+							<b>固定班</b>
+							<span>待支付</span>
+						</p>
+						<div class="fly">
+							<div>
+								<b>贵阳东站<i class="mui-icon mui-icon-arrowthinright"></i>遵义</b><br />
+								<span>发车时间:05月04日 10:00</span>
+							</div>
+							<div>
+								<b>¥89</b><br />
+								<span>共1张票</span>
+							</div>
+						</div>
+						<div class="liji"> 
+							<b>立即支付</b>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			
+			document.getElementById("a1").onclick=function(){
+				var guding = document.getElementsByClassName("guing")[0];
+				this.className="teshu";
+				document.getElementById("a2").className="";
+				document.getElementById("a3").className="";
+				guding.show();
+			}
+			document.getElementById("a2").onclick=function(){
+				this.className="teshu";
+				document.getElementById("a1").className="";
+				document.getElementById("a3").className="";
+			}
+			document.getElementById("a3").onclick=function(){
+				this.className="teshu";
+				document.getElementById("a1").className="";
+				document.getElementById("a2").className="";
+			}
+			
+			mui.init({
+			  pullRefresh : {
+				container:"#refreshContainer",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+				down : {
+				  style:'circle',//必选，下拉刷新样式，目前支持原生5+ ‘circle’ 样式
+				  color:'#fff', //可选，默认“#2BD009” 下拉刷新控件颜色
+				  height:50,//可选,默认50px.下拉刷新控件的高度,
+//			      range:'100px', //可选 默认100px,控件可下拉拖拽的范围
+//			      offset:'0px', //可选 默认0px,下拉刷新控件的起始位置
+//			      auto: true,//可选,默认false.首次加载自动上拉刷新一次
+//			      callback :pullfresh-function //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+				   contentdown : "下拉可以刷新",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+				  contentover : "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+				  contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+				  callback:pulldown,
+				},
+			  }
+			});
+			 function pulldown() {
+				setTimeout(function () {
+					//querySelector()返回匹配指定选择器的第一个元素;
+					//querySelectorAll()返回所有的元素
+					//createElement创建一个文本节点
+					var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					
+					mui('#refreshContainer').pullRefresh().endPulldownToRefresh(); //refresh completed
+				}, 1500);
+			}
+			
+		</script>
 	</body>
 </html>

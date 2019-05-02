@@ -144,6 +144,21 @@
 					"html/shouye/chufa.html"
 				],
 				"priority": 0
+			},
+			"html/wode.html": {
+				"resources": [],
+				"refer": [
+					"html/wode/lianweb.html",
+					"html/wode/fapiao.html"
+				],
+				"priority": 0
+			},
+			"html/dingdan.html": {
+				"resources": [],
+				"refer": [
+					"html/dingdan/qiCar.html"
+				],
+				"priority": 0
 			}
 		},
 		"idle": {

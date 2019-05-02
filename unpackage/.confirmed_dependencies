@@ -13,5 +13,16 @@
 		"refer": [
 			"html/shouye/chufa.html"
 		]
+	},
+	"html/wode.html": {
+		"refer": [
+			"html/wode/lianweb.html",
+			"html/wode/fapiao.html"
+		]
+	},
+	"html/dingdan.html": {
+		"refer": [
+			"html/dingdan/qiCar.html"
+		]
 	}
 }
