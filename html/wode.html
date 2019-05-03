@@ -121,7 +121,7 @@
 			<div class="logo">
 				<p><i class="iconfont icon-xinxi"></i></p>
 				<ul>
-					<li><i><img src="../img/user.png"></i></li>
+					<li id="wode"><i><img src="../img/user.png"></i></li>
 					<li>131******13<br>请完善个人信息</li>
 				</ul>
 			</div>
@@ -175,6 +175,12 @@
 			mui.openWindow({
 			url: 'wode/lianweb.html', 
 			id:'lianweb'
+			})
+			})
+			document.getElementById('wode').addEventListener('tap',function(){
+			mui.openWindow({
+			url: 'wode/login.html', 
+			id:'wode'
 			})
 			})
 		</script>
