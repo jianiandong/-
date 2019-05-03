@@ -296,34 +296,8 @@
 					window.addEventListener('resize', function() {
 						oauthArea.style.display = document.body.clientHeight > 400 ? 'block' : 'none';
 					}, false);
-					//
-					var backButtonPress = 0;
-					$.back = function(event) {
-						backButtonPress++;
-						if (backButtonPress > 1) {
-							plus.runtime.quit();
-						} else {
-							plus.nativeUI.toast('再按一次退出应用');
-						}
-						setTimeout(function() {
-							backButtonPress = 0;
-						}, 1000);
-						return false;
-					};
 				});
 			}(mui, document));
-// 			document.getElementById('reg').addEventListener('tap',function(){
-// 			mui.openWindow({
-// 			url: 'reg.html', 
-// 			id:'reg'
-// 			})
-// 			})
-// 			document.getElementById('forgetPassword').addEventListener('tap',function(){
-// 			mui.openWindow({
-// 			url: 'forget_password.html', 
-// 			id:'forget_password'
-// 			})
-// 			})
 		</script>
 	</body>
 
