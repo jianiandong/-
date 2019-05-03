@@ -141,7 +141,8 @@
 			"html/shouye.html": {
 				"resources": [],
 				"refer": [
-					"html/shouye/chufa.html"
+					"html/shouye/chufa.html",
+					"html/shouye/rili.html"
 				],
 				"priority": 0
 			},
@@ -149,7 +150,8 @@
 				"resources": [],
 				"refer": [
 					"html/wode/lianweb.html",
-					"html/wode/fapiao.html"
+					"html/wode/fapiao.html",
+					"html/wode/login.html"
 				],
 				"priority": 0
 			},
@@ -157,6 +159,22 @@
 				"resources": [],
 				"refer": [
 					"html/dingdan/qiCar.html"
+				],
+				"priority": 0
+			},
+			"html/wode/login.html": {
+				"resources": [],
+				"refer": [
+					"html/wode/main.html",
+					"html/wode/reg.html",
+					"html/wode/forget_password.html"
+				],
+				"priority": 0
+			},
+			"html/wode/main.html": {
+				"resources": [],
+				"refer": [
+					"html/wode/setting.html"
 				],
 				"priority": 0
 			}

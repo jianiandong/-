@@ -190,7 +190,7 @@
 									//如果微信未安装，则为不启用状态
 									btn.setAttribute('class', 'oauth-btn' + (!isInstalled && service.id === 'weixin' ? (' disabled') : ''));
 									btn.authId = service.id;
-									btn.style.backgroundImage = 'url("images/' + service.id + '.png")'
+									btn.style.backgroundImage = 'url("../../img/' + service.id + '.png")'
 									oauthArea.appendChild(btn);
 								}
 							}
@@ -259,6 +259,39 @@
 							app.setSettings(settings);
 						}, 50);
 					}, false);
+					regButton.addEventListener('tap', function() {
+						$.openWindow({
+							url: 'reg.html',
+							id: 'reg',
+							preload: true,
+							show: {
+								aniShow: 'pop-in'
+							},
+							styles: {
+								popGesture: 'hide'
+							},
+							waiting: {
+								autoShow: false
+							}
+						});
+					},false);
+					
+					forgetButton.addEventListener('tap', function() {
+						$.openWindow({
+							url: 'forget_password.html',
+							id: 'forget_password',
+							preload: true,
+							show: {
+								aniShow: 'pop-in'
+							},
+							styles: {
+								popGesture: 'hide'
+							},
+							waiting: {
+								autoShow: false
+							}
+						},false);
+					});
 					//
 					window.addEventListener('resize', function() {
 						oauthArea.style.display = document.body.clientHeight > 400 ? 'block' : 'none';
@@ -279,18 +312,18 @@
 					};
 				});
 			}(mui, document));
-			document.getElementById('reg').addEventListener('tap',function(){
-			mui.openWindow({
-			url: 'reg.html', 
-			id:'reg'
-			})
-			})
-			document.getElementById('forgetPassword').addEventListener('tap',function(){
-			mui.openWindow({
-			url: 'forget_password.html', 
-			id:'forget_password'
-			})
-			})
+// 			document.getElementById('reg').addEventListener('tap',function(){
+// 			mui.openWindow({
+// 			url: 'reg.html', 
+// 			id:'reg'
+// 			})
+// 			})
+// 			document.getElementById('forgetPassword').addEventListener('tap',function(){
+// 			mui.openWindow({
+// 			url: 'forget_password.html', 
+// 			id:'forget_password'
+// 			})
+// 			})
 		</script>
 	</body>
 

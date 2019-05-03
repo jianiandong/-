@@ -9,6 +9,8 @@
 		<link href="../css/iconfont.css" rel="stylesheet" />
 		<link href="../css/shouye.css" rel="stylesheet" rel="stylesheet" type="text/css"/>
 		<script src="../js/mui.js"></script>
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/jquery.touchSwipe.min.js"></script>
 		
 		<script type="text/javascript">
 			mui.init()
@@ -68,45 +70,47 @@
 					<i class="iconfont icon-gonggao"></i>
 					<b>[公告] 遵义高铁客运站开通网上售票</b>
 				</div>
-				<div class="inp">
-					<ul>
-						<li class="a">
-							<i class="iconfont icon-yuanquan"></i>
-							<b>贵阳</b>
-							<span class="iconfont icon-jiaohuan"></span>
-						</li>
-						<li class="a">
-							<i class="iconfont icon-yuanquan"></i>
-							<b>请设置目的地</b>
-						</li>
-						<li id="d1" class="Wdate">
-							<i class="iconfont icon-rili"></i>
-							<b>5月1日今天</b>
-							<span class="mui-icon mui-icon-arrowright"></span>
-						</li>
-					</ul>
-					<p>查询</p>
-				</div>
-				<div class="inp1">
-					<ul>
-						<li>
-							<i class="iconfont icon-yuanquan"></i>
-							<b>贵阳</b>
-							<span class="iconfont icon-jiaohuan"></span>
-						</li>
-						<li>
-							<i class="iconfont icon-yuanquan"></i>
-							<b>北京</b>
-						</li>
-						<li>
-							<i class="iconfont icon-rili"></i>
-							<b id="d1">5月1日今天</b>
-							<span class="mui-icon mui-icon-arrowright"></span>
-						</li>
-					</ul>
-					<b>只看高铁<input type="radio"></b>
-					<p>查询</p>
-					<span>贵阳-北京<a href="#">清楚记录</a></span>
+				<div class="piao">
+					<div class="inp">
+						<ul>
+							<li class="a">
+								<i class="iconfont icon-yuanquan"></i>
+								<b>贵阳</b>
+								<span class="iconfont icon-jiaohuan"></span>
+							</li>
+							<li class="a">
+								<i class="iconfont icon-yuanquan"></i>
+								<b>请设置目的地</b>
+							</li>
+							<li id="d1" class="Wdate riqi">
+								<i class="iconfont icon-rili"></i>
+								<b>5月1日今天</b>
+								<span class="mui-icon mui-icon-arrowright"></span>
+							</li>
+						</ul>
+						<p>查询</p>
+					</div>
+					<div class="inp1">
+						<ul>
+							<li>
+								<i class="iconfont icon-yuanquan"></i>
+								<b>贵阳</b>
+								<span class="iconfont icon-jiaohuan"></span>
+							</li>
+							<li>
+								<i class="iconfont icon-yuanquan"></i>
+								<b>北京</b>
+							</li>
+							<li class="riqi">
+								<i class="iconfont icon-rili"></i>
+								<b id="d1">5月1日今天</b>
+								<span class="mui-icon mui-icon-arrowright"></span>
+							</li>
+						</ul>
+						<b>只看高铁<input type="radio"></b>
+						<p>查询</p>
+						<span>贵阳-北京<a href="#">清楚记录</a></span>
+					</div>
 				</div>
 				<div class="jiesong">
 					<ul>
@@ -183,7 +187,36 @@
 			id:'chufa'
 			})
 			})
-			
+			document.getElementsByClassName('riqi')[0].addEventListener('tap',function(){
+			mui.openWindow({
+			url: 'shouye/rili.html', 
+			id:'rili'
+			})
+			})
+			var i =0;
+	$(".piao").swipe({
+         swipeLeft:function(event, direction, distance, duration, fingerCount){
+         	i++;
+         	if(i>=1){
+         		i=1
+         	}
+			$(".inp").hide();
+			$(".inp1").show();
+			$("#teshu").css({"background":"none","color":"white"});
+			$("#teshu1").css({"background":"white","color":"black"});
+         },
+         swipeRight:function(event, direction, distance, duration, fingerCount){
+         	i--;
+         	if(i<=0){
+         		i=0
+         	}
+         	$(".inp1").hide();
+         	$(".inp").show();
+			$("#teshu1").css({"background":"none","color":"white"});
+			$("#teshu").css({"background":"white","color":"black"});
+         },
+         fingers:"all",
+	})
 		</script>
 	</body>
 
