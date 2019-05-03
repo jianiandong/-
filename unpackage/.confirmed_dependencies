@@ -1,42 +1,42 @@
 {
-	"index.html": {
-		"resources": [
-			"html/shouye.html"
-		],
-		"refer": [
-			"html/wode.html",
-			"html/dingdan.html",
-			"html/shouye.html"
-		]
-	},
-	"html/shouye.html": {
-		"refer": [
-			"html/shouye/chufa.html",
-			"html/shouye/rili.html"
-		]
-	},
-	"html/wode.html": {
-		"refer": [
-			"html/wode/lianweb.html",
-			"html/wode/fapiao.html",
-			"html/wode/login.html"
-		]
-	},
-	"html/dingdan.html": {
-		"refer": [
-			"html/dingdan/qiCar.html"
-		]
-	},
-	"html/wode/login.html": {
-		"refer": [
-			"html/wode/main.html",
-			"html/wode/reg.html",
-			"html/wode/forget_password.html"
-		]
-	},
-	"html/wode/main.html": {
-		"refer": [
-			"html/wode/setting.html"
-		]
-	}
+  "index.html": {
+    "resources": [
+      "html/shouye.html"
+    ],
+    "refer": [
+      "html/wode.html",
+      "html/dingdan.html",
+      "html/shouye.html"
+    ]
+  },
+  "html/shouye.html": {
+    "refer": [
+      "html/shouye/chufa.html",
+      "html/shouye/rili.html"
+    ]
+  },
+  "html/wode.html": {
+    "refer": [
+      "html/wode/lianweb.html",
+      "html/wode/fapiao.html",
+      "html/wode/login.html"
+    ]
+  },
+  "html/dingdan.html": {
+    "refer": [
+      "html/dingdan/qiCar.html"
+    ]
+  },
+  "html/wode/login.html": {
+    "refer": [
+      "html/wode/main.html",
+      "html/wode/reg.html",
+      "html/wode/forget_password.html"
+    ]
+  },
+  "html/wode/main.html": {
+    "refer": [
+      "html/wode/setting.html"
+    ]
+  }
 }
